@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navManu {
+  position: relative;
+}
+
+.altr {
+  background-color: #ddd;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  right: -100%;
+  transition: .3s;
+}
+.altr.active {
+  right: 0;
+}
+.altr li {
+  text-align: center;
+  margin: 10px;
+  list-style: none;
+  
+}
+.altr li a {
+  color: black;
+  font-size: 20px;
+  
+}
+
+/*Responsive*/
+
+@media (min-width:499px) {
+  .altr {
+    display: none;
+  }
+}
